@@ -1,20 +1,4 @@
 package com.annyprojetos.dslist.entities;
-//1: construtor padrão, preciso declarar ele aqui pq quero declarar um passando parâmetros, então se eu declarar só o debaixo, não posso mais instanciar sem parâmetros.
-
-//2: hash e equals ficou diferente do dele. Se der erro, foi aqui. Aula 1: min 1:01:00.
-
-//3: Configura essa classe Java para ser equivalente a uma tabela do banco.
-
-/*4: A anotação @Table permite que você especifique os detalhes da tabela que será usada para persistir a entidade no banco de dados. A anotação @Table fornece quatro atributos, permitindo que você substitua o nome da tabela, seu catálogo e seu esquema, e imponha restrições exclusivas em colunas na tabela. Por enquanto, estamos usando apenas o nome da tabela, que é tb_game.*/
-
-//5: Essa anotação define quem será a primary key da tabela.
-
-//6: Essa anotação define que o preenchimento do Id será autoincremental.
-
-//7: Precisei renomear a coluna "year", pois essa palavra é reservada no SQL, geraria um conflito.
-
-//8: O tipo String é convertido para varchar no banco. E o varchar tem limite de 255 caracteres. Então é preciso esse macete, pois o tipo TEXT é maior.
-
 import jakarta.persistence.*;
 
 import java.util.Objects;
